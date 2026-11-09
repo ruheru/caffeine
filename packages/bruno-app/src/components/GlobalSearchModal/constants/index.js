@@ -2,7 +2,8 @@ export const SEARCH_TYPES = {
   DOCUMENTATION: 'documentation',
   COLLECTION: 'collection',
   FOLDER: 'folder',
-  REQUEST: 'request'
+  REQUEST: 'request',
+  COMMAND: 'command'
 };
 
 export const MATCH_TYPES = {
@@ -24,9 +25,9 @@ export const SEARCH_CONFIG = {
 
 export const DOCUMENTATION_RESULT = {
   type: SEARCH_TYPES.DOCUMENTATION,
-  item: { id: 'docs', name: 'Bruno Documentation' },
-  name: 'Bruno Documentation',
+  item: { id: 'docs', name: 'Documentation' },
+  name: 'Documentation',
   path: '/',
-  description: 'Browse the official Bruno documentation',
+  description: 'Browse the Caffeine documentation',
   matchType: MATCH_TYPES.DOCUMENTATION
 };

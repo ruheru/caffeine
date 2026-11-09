@@ -1,7 +1,7 @@
 <br />
 <img src="assets/images/logo-transparent.png" width="80"/>
 
-### Bruno - Opensource IDE for exploring and testing APIs.
+### Caffeine - Opensource IDE for exploring and testing APIs.
 
 [![GitHub version](https://badge.fury.io/gh/usebruno%2Fbruno.svg)](https://badge.fury.io/gh/usebruno%2Fbruno)
 [![CI](https://github.com/usebruno/bruno/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/usebruno/bruno/actions/workflows/tests.yml)
@@ -32,15 +32,15 @@
 | [فارسی](docs/readme/readme_fa.md)
 | [हिन्दी](docs/readme/readme_hi.md)
 
-Bruno is a new and innovative API client, aimed at revolutionizing the status quo represented by Postman and similar tools out there.
+Caffeine is a new and innovative API client, aimed at revolutionizing the status quo represented by Postman and similar tools out there.
 
-Bruno stores your collections directly in a folder on your filesystem. We use a plain text markup language, Bru, to save information about API requests.
+Caffeine stores your collections directly in a folder on your filesystem. We use a plain text markup language, Bru, to save information about API requests.
 
 You can use Git or any version control of your choice to collaborate over your API collections.
 
-Bruno is offline-only. There are no plans to add cloud-sync to Bruno, ever. We value your data privacy and believe it should stay on your device. Read our long-term vision [here](https://github.com/usebruno/bruno/discussions/269)
+Caffeine is offline-only. There are no plans to add cloud-sync to Caffeine, ever. We value your data privacy and believe it should stay on your device. Read our long-term vision [here](https://github.com/usebruno/bruno/discussions/269)
 
-[Download Bruno](https://www.usebruno.com/downloads)
+[Download Caffeine](https://www.usebruno.com/downloads)
 
 📢 Watch our recent talk at India FOSS 3.0 Conference [here](https://www.youtube.com/watch?v=7bSMFpbcPiY)
 
@@ -57,7 +57,7 @@ You can explore our [paid versions](https://www.usebruno.com/pricing) to see if 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Bruno CLI](#bruno-cli)
+- [Caffeine CLI](#caffeine-cli)
 - [Run with Docker](#run-with-docker)
 - [Features](#features)
   - [Run across multiple platforms 🖥️](#run-across-multiple-platforms-%EF%B8%8F)
@@ -74,9 +74,9 @@ You can explore our [paid versions](https://www.usebruno.com/pricing) to see if 
 
 ## Installation
 
-Bruno is available as binary download [on our website](https://www.usebruno.com/downloads) for Mac, Windows and Linux.
+Caffeine is available as binary download [on our website](https://www.usebruno.com/downloads) for Mac, Windows and Linux.
 
-You can also install Bruno via package managers like Homebrew, Chocolatey, Scoop, Snap, Flatpak and Apt.
+You can also install Caffeine via package managers like Homebrew, Chocolatey, Scoop, Snap, Flatpak and Apt.
 
 ```sh
 # On Mac via Homebrew
@@ -113,9 +113,9 @@ echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/bruno.gpg] http://debian.usebr
 sudo apt update && sudo apt install bruno
 ```
 
-## Bruno CLI
+## Caffeine CLI
 
-The **Bruno CLI** lets you run your API collections from the command line, which is ideal for automated testing and CI/CD pipelines. Install it from npm using the package manager of your choice:
+The **Caffeine CLI** lets you run your API collections from the command line, which is ideal for automated testing and CI/CD pipelines. Install it from npm using the package manager of your choice:
 
 ```sh
 npm install -g @usebruno/cli
@@ -134,11 +134,11 @@ bru run request.bru
 bru run folder --env Local
 ```
 
-For the full command reference, see the [Bruno CLI documentation](https://docs.usebruno.com/bru-cli/overview).
+For the full command reference, see the [Caffeine CLI documentation](https://docs.usebruno.com/bru-cli/overview).
 
 ## Run with Docker
 
-Official Docker images for the **Bruno CLI** let you run API collections in CI/CD pipelines and locally without installing Node.js or npm on the host. Images are published to both [Docker Hub](https://hub.docker.com/r/usebruno/cli) and the [GitHub Container Registry](https://ghcr.io/usebruno/cli) on every CLI release, with `alpine` and `debian` variants for `linux/amd64` and `linux/arm64`.
+Official Docker images for the **Caffeine CLI** let you run API collections in CI/CD pipelines and locally without installing Node.js or npm on the host. Images are published to both [Docker Hub](https://hub.docker.com/r/usebruno/cli) and the [GitHub Container Registry](https://ghcr.io/usebruno/cli) on every CLI release, with `alpine` and `debian` variants for `linux/amd64` and `linux/arm64`.
 
 ```sh
 # Pull from Docker Hub
@@ -151,7 +151,7 @@ docker pull ghcr.io/usebruno/cli:latest
 docker run -v $(pwd):/bruno usebruno/cli run
 ```
 
-For variants, tag matrix, environment files, and CI examples (GitHub Actions, GitLab CI, Jenkins), see the full [Bruno CLI Docker documentation](https://docs.usebruno.com/bru-cli/docker).
+For variants, tag matrix, environment files, and CI examples (GitHub Actions, GitLab CI, Jenkins), see the full [Caffeine CLI Docker documentation](https://docs.usebruno.com/bru-cli/docker).
 
 ## Features
 
@@ -183,7 +183,7 @@ Or any version control system of your choice
 
 ## Share Testimonials 📣
 
-If Bruno has helped you at work and your teams, please don't forget to share your [testimonials on our GitHub discussion](https://github.com/usebruno/bruno/discussions/343)
+If Caffeine has helped you at work and your teams, please don't forget to share your [testimonials on our GitHub discussion](https://github.com/usebruno/bruno/discussions/343)
 
 ## Publishing to New Package Managers
 
@@ -200,7 +200,7 @@ Please see [here](publishing.md) for more information.
 
 **Name**
 
-`Bruno` is a trademark held by [Anoop M D](https://www.helloanoop.com/)
+`Caffeine` is a trademark held by Umam Labs
 
 **Logo**
 
@@ -208,7 +208,7 @@ The logo is sourced from [OpenMoji](https://openmoji.org/library/emoji-1F436/). 
 
 ## Contribute 👩‍💻🧑‍💻
 
-I am happy that you are looking to improve bruno. Please check out the [contributing guide](contributing.md)
+I am happy that you are looking to improve Caffeine. Please check out the [contributing guide](contributing.md)
 
 Even if you are not able to make contributions via code, please don't hesitate to file bugs and feature requests that needs to be implemented to solve your use case.
 

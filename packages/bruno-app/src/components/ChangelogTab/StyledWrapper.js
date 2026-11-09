@@ -75,7 +75,7 @@ const StyledWrapper = styled.div`
         }
       }
 
-      p:has(> a[href*='link.usebruno.com']),
+      p:has(> a[href*='github.com/umamlabs/caffeine']),
       p:has(> a[href^='#preferences/']) {
         display: flex;
         align-items: center;
@@ -88,7 +88,7 @@ const StyledWrapper = styled.div`
           color: ${(props) => props.theme.textLink};
         }
 
-        a[href*='link.usebruno.com'] {
+        a[href*='github.com/umamlabs/caffeine'] {
           margin-left: auto;
         }
       }

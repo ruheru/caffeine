@@ -1,0 +1,56 @@
+{
+	"version": "0.0.1",
+	"activeWorkspacePath": "C:\\KhairulUmam\\Tools\\API Tools\\.dev-userdata\\default-workspace",
+	"extras": {
+		"devTools": {
+			"open": false,
+			"activeTab": "terminal",
+			"tabs": {
+				"terminal": {}
+			}
+		},
+		"sidebar": {
+			"collapsed": false,
+			"width": 250
+		}
+	},
+	"workspaces": [
+		{
+			"pathname": "C:\\KhairulUmam\\Tools\\API Tools\\.dev-userdata\\default-workspace",
+			"environment": "",
+			"lastActiveCollectionPathname": "C:/Users/KhairulUmam/OneDrive - (G)Tech Digital/Documents/bruno/Sample API Collection - 1",
+			"activeWorkspaceTabType": null,
+			"sorting": "default",
+			"apiSpecTabs": [],
+			"activeApiSpecTabPathname": null,
+			"collections": [
+				"C:/Users/KhairulUmam/OneDrive - (G)Tech Digital/Documents/bruno/Sample API Collection - 1"
+			]
+		}
+	],
+	"collections": [
+		{
+			"pathname": "C:\\Users\\KhairulUmam\\OneDrive - (G)Tech Digital\\Documents\\bruno\\Sample API Collection - 1",
+			"workspacePathname": "C:\\KhairulUmam\\Tools\\API Tools\\.dev-userdata\\default-workspace",
+			"environment": {
+				"collection": "",
+				"global": ""
+			},
+			"environmentPath": "",
+			"selectedEnvironment": "",
+			"isOpen": true,
+			"isMounted": true,
+			"activeTab": {
+				"accessor": "type",
+				"value": "collection-settings"
+			},
+			"tabs": [
+				{
+					"type": "collection-settings",
+					"accessor": "type",
+					"permanent": false
+				}
+			]
+		}
+	]
+}

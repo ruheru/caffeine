@@ -1,0 +1,117 @@
+{
+	"preferences": {
+		"request": {
+			"sslVerification": true,
+			"customCaCertificate": {
+				"enabled": false,
+				"filePath": null
+			},
+			"keepDefaultCaCertificates": {
+				"enabled": true
+			},
+			"storeCookies": true,
+			"sendCookies": true,
+			"timeout": 0,
+			"oauth2": {
+				"useSystemBrowser": false
+			},
+			"clientCertificates": {
+				"certs": []
+			}
+		},
+		"font": {
+			"codeFont": "default",
+			"codeFontSize": 13
+		},
+		"proxy": {
+			"source": "inherit",
+			"pac": {
+				"source": ""
+			},
+			"config": {
+				"protocol": "http",
+				"hostname": "",
+				"port": null,
+				"auth": {
+					"username": "",
+					"password": ""
+				},
+				"bypassProxy": ""
+			}
+		},
+		"layout": {
+			"responsePaneOrientation": "horizontal"
+		},
+		"mockServer": {
+			"mode": "isolated",
+			"instances": []
+		},
+		"beta": {
+			"openapi-sync": false,
+			"mock-server": true
+		},
+		"onboarding": {
+			"hasLaunchedBefore": true,
+			"hasSeenWelcomeModal": true,
+			"lastSeenVersion": "2.0.0"
+		},
+		"general": {
+			"defaultLocation": "C:\\Users\\KhairulUmam\\OneDrive - (G)Tech Digital\\Documents\\bruno",
+			"defaultWorkspacePath": ""
+		},
+		"autoSave": {
+			"enabled": false,
+			"interval": 1000
+		},
+		"display": {
+			"zoomPercentage": 100
+		},
+		"cache": {
+			"sslSession": {
+				"enabled": false
+			},
+			"file": {
+				"enabled": false
+			}
+		},
+		"ai": {
+			"enabled": false,
+			"providers": {
+				"openai": {
+					"enabled": false
+				},
+				"anthropic": {
+					"enabled": false
+				}
+			},
+			"models": {},
+			"defaultModel": "",
+			"openaiCompatibleEndpoints": [],
+			"autocomplete": {
+				"enabled": true,
+				"model": "",
+				"triggerMode": "debounced"
+			},
+			"security": {
+				"redactHeaders": true,
+				"redactBody": true,
+				"redactVariables": true,
+				"redactResponse": true,
+				"customRedactedHeaders": [],
+				"customRedactedVariables": []
+			}
+		},
+		"_migrations": {
+			"mockServerBetaOnByDefault": true
+		}
+	},
+	"window-bounds": {
+		"x": 127,
+		"y": 71,
+		"width": 1282,
+		"height": 770
+	},
+	"themeMode": "system",
+	"themeBg": "#0d0b0a",
+	"maximized": true
+}

@@ -51,7 +51,7 @@ export interface ApiDocsDependencies {
 
 const YAML_DUMP_OPTIONS = { indent: 2, lineWidth: -1, noRefs: true, sortKeys: false };
 const JSESC_OPTIONS = { quotes: 'double', wrap: true };
-const DEFAULT_RENDERER_BASE_URL = 'https://cdn.usebruno.com';
+const DEFAULT_RENDERER_BASE_URL = 'https://cdn.caffeine.dev';
 
 const isFolder = (item: TaggedItem): boolean => item.type === 'folder' || Array.isArray(item.items);
 const isRequestItem = (item: TaggedItem): boolean =>

@@ -17,8 +17,10 @@ const Wrapper = styled.div`
   .method-selector {
     display: flex;
     align-items: center;
-    margin: 2px;
+    margin: 5px 4px 5px 5px;
+    padding: 0 0.15rem;
     border-radius: ${(props) => props.theme.border.radius.sm};
+    background-color: color-mix(in srgb, currentColor 10%, transparent);
 
     &:not(.custom-input-mode):hover,
     &:has(button[aria-expanded="true"]) {

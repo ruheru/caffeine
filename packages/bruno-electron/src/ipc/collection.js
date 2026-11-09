@@ -2805,7 +2805,8 @@ const registerMainEventHandlers = (mainWindow) => {
   ipcMain.on('menu:open-collection', triggerOpenCollection);
 
   ipcMain.on('main:open-docs', () => {
-    const docsURL = 'https://docs.usebruno.com';
+    // TODO: Update to Caffeine documentation URL when available
+    const docsURL = 'https://github.com/umamlabs/caffeine';
     shell.openExternal(docsURL);
   });
 

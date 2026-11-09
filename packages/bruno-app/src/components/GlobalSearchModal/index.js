@@ -18,6 +18,7 @@ import { getDefaultRequestPaneTab } from 'utils/collections';
 import { normalizePath } from 'utils/common/path';
 import { normalizeQuery, isValidQuery, highlightText, sortResults, getTypeLabel, getItemPath } from './utils/searchUtils';
 import { SEARCH_TYPES, MATCH_TYPES, SEARCH_CONFIG, DOCUMENTATION_RESULT } from './constants';
+import { PALETTE_COMMANDS, matchCommands, runPaletteCommand, getCommandShortcutLabel } from './commands';
 import StyledWrapper from './StyledWrapper';
 
 const GlobalSearchModal = ({ isOpen, onClose }) => {
@@ -31,6 +32,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
 
   const store = useStore();
   const activeWorkspace = useSelector(selectActiveWorkspace);
+  const userKeyBindings = useSelector((state) => state.app.preferences?.keyBindings);
 
   // Intentional whole-array subscription: the search renders results derived
   // from every collection, and the modal is only mounted while open, so it is
@@ -46,6 +48,15 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
     return allCollections.filter((c) => workspacePaths.has(normalizePath(c.pathname)));
   }, [activeWorkspace, allCollections]);
 
+  const toCommandResult = (command) => ({
+    type: SEARCH_TYPES.COMMAND,
+    item: { id: `command-${command.action}`, ...command },
+    name: command.label,
+    path: command.label,
+    description: 'Run command',
+    shortcut: getCommandShortcutLabel(command.action, userKeyBindings)
+  });
+
   const createCollectionResults = () => {
     const collectionResults = collections.map((collection) => ({
       type: SEARCH_TYPES.COLLECTION,
@@ -57,7 +68,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
     }));
 
     collectionResults.sort((a, b) => a.name.localeCompare(b.name));
-    return [DOCUMENTATION_RESULT, ...collectionResults];
+    return [...collectionResults, ...PALETTE_COMMANDS.map(toCommandResult), DOCUMENTATION_RESULT];
   };
 
   const searchInCollections = (searchTerms, enablePathMatch) => {
@@ -65,7 +76,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
 
     // Check for documentation match
     const queryLower = searchTerms.join(' ');
-    if (['documentation', 'docs', 'bruno docs'].some((term) => term.includes(queryLower))) {
+    if (['documentation', 'docs', 'bruno docs', 'caffeine docs'].some((term) => term.includes(queryLower))) {
       results.push(DOCUMENTATION_RESULT);
     }
 
@@ -159,8 +170,9 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
     const enablePathMatch = normalizedQuery.includes('/');
     const searchResults = searchInCollections(searchTerms, enablePathMatch);
     const sortedResults = sortResults(searchResults);
+    const commandResults = matchCommands(searchTerms).map(toCommandResult);
 
-    setResults(sortedResults);
+    setResults([...commandResults, ...sortedResults]);
     setSelectedIndex(0);
   };
 
@@ -174,7 +186,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
     debounceTimeoutRef.current = setTimeout(() => {
       performSearch(searchQuery);
     }, SEARCH_CONFIG.DEBOUNCE_DELAY);
-  }, [collections]); // Depend on collections to recreate when they change
+  }, [collections, userKeyBindings]); // Recreate when collections or shortcut labels change
 
   const expandItemPath = (result) => {
     const collection = collections.find((c) => c.uid === result.collectionUid);
@@ -247,11 +259,19 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
   };
 
   const handleResultSelection = (result) => {
+    if (result.type === SEARCH_TYPES.COMMAND) {
+      // Close first so the modal's input no longer has focus when the shortcut fires.
+      onClose();
+      runPaletteCommand(result.item.action, userKeyBindings);
+      return;
+    }
+
     const targetCollection = collections.find((c) => c.uid === result.collectionUid);
     ensureCollectionIsMounted(targetCollection);
 
     if (result.type === SEARCH_TYPES.DOCUMENTATION) {
-      window.open('https://docs.usebruno.com/', '_blank');
+      // TODO: Update to Caffeine documentation URL when available
+      window.open('https://github.com/umamlabs/caffeine', '_blank');
       onClose();
       return;
     }
@@ -352,14 +372,14 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
     };
   }, []);
 
-  const getResultIcon = (type) => {
+  const getResultIcon = (result) => {
     const iconMap = {
       [SEARCH_TYPES.DOCUMENTATION]: IconBook,
       [SEARCH_TYPES.COLLECTION]: IconBox,
       [SEARCH_TYPES.FOLDER]: IconFolder,
       [SEARCH_TYPES.REQUEST]: IconFileText
     };
-    const IconComponent = iconMap[type] || IconFileText;
+    const IconComponent = (result.type === SEARCH_TYPES.COMMAND ? result.item.icon : iconMap[result.type]) || IconFileText;
     return <IconComponent size={18} stroke={1.5} />;
   };
 
@@ -393,7 +413,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
               <input
                 ref={inputRef}
                 type="text"
-                placeholder="Search collections, requests, or documentation..."
+                placeholder="Search requests, collections, or type a command..."
                 value={query}
                 onChange={handleQueryChange}
                 onKeyDown={handleKeyNavigation}
@@ -402,7 +422,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
                 autoCorrect="off"
                 autoCapitalize="off"
                 spellCheck="false"
-                aria-label="Search collections, requests, or documentation"
+                aria-label="Search requests, collections, or commands"
                 aria-expanded={results.length > 0}
                 aria-controls="search-results"
                 aria-activedescendant={results.length > 0 ? `search-result-${selectedIndex}` : undefined}
@@ -469,7 +489,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
                     tabIndex={-1}
                   >
                     <div className="result-icon">
-                      {getResultIcon(result.type)}
+                      {getResultIcon(result)}
                     </div>
                     <div className="result-content">
                       <div className="result-info">
@@ -477,7 +497,7 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
                           {highlightText(result.name, query)}
                         </div>
                         <div className="result-path">
-                          {result.type === SEARCH_TYPES.DOCUMENTATION
+                          {result.type === SEARCH_TYPES.DOCUMENTATION || result.type === SEARCH_TYPES.COMMAND
                             ? result.description
                             : result.type === SEARCH_TYPES.REQUEST
                               ? highlightText(result.item.request?.url || '', query)
@@ -491,6 +511,11 @@ const GlobalSearchModal = ({ isOpen, onClose }) => {
                             aria-label={`HTTP method ${result.method.toUpperCase().replace(/-/g, ' ')}`}
                           >
                             {result.method.toUpperCase().replace(/-/g, ' ')}
+                          </span>
+                        )}
+                        {result.shortcut && (
+                          <span className="shortcut-badge" aria-label={`Shortcut ${result.shortcut}`}>
+                            {result.shortcut}
                           </span>
                         )}
                         {typeLabel && (

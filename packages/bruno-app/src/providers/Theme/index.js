@@ -30,8 +30,8 @@ export const ThemeContext = createContext();
 export const ThemeProvider = (props) => {
   const [storedTheme, setStoredTheme] = useLocalStorage('bruno.theme', 'system');
   const [displayedTheme, setDisplayedTheme] = useState(() => getEffectiveTheme(storedTheme));
-  const [themeVariantLight, setThemeVariantLight] = useLocalStorage('bruno.themeVariantLight', 'light');
-  const [themeVariantDark, setThemeVariantDark] = useLocalStorage('bruno.themeVariantDark', 'dark');
+  const [themeVariantLight, setThemeVariantLight] = useLocalStorage('bruno.themeVariantLight', 'caffeine-light');
+  const [themeVariantDark, setThemeVariantDark] = useLocalStorage('bruno.themeVariantDark', 'caffeine-dark');
 
   // Listen for system theme changes (only affects 'system' mode)
   useEffect(() => {

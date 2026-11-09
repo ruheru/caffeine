@@ -8,7 +8,8 @@ const { safeParseJSON, safeStringifyJSON } = require('./common');
 const { preferencesUtil } = require('../store/preferences');
 const qs = require('qs');
 
-const BRUNO_OAUTH2_CALLBACK_URL = 'https://oauth.usebruno.com/callback';
+// TODO: Update to Caffeine OAuth2 callback URL when available
+const CAFFEINE_OAUTH2_CALLBACK_URL = 'https://github.com/umamlabs/caffeine/oauth/callback';
 
 const oauth2Store = new Oauth2Store();
 
@@ -155,7 +156,7 @@ const getOAuth2TokenUsingAuthorizationCode = async ({ request, collectionUid, fo
     autoFetchToken,
     additionalParameters
   } = oAuth;
-  const effectiveCallbackUrl = callbackUrl && callbackUrl.length ? callbackUrl : BRUNO_OAUTH2_CALLBACK_URL;
+  const effectiveCallbackUrl = callbackUrl && callbackUrl.length ? callbackUrl : CAFFEINE_OAUTH2_CALLBACK_URL;
   const url = requestCopy?.oauth2?.accessTokenUrl;
 
   // Validate required fields
@@ -307,7 +308,7 @@ const getOAuth2AuthorizationCode = (request, codeChallenge, collectionUid) => {
     const { oauth2 } = request;
     const { callbackUrl, clientId, authorizationUrl, scope, state, pkce, accessTokenUrl, additionalParameters } = oauth2;
     const useSystemBrowser = preferencesUtil.shouldUseSystemBrowser();
-    const effectiveCallbackUrl = callbackUrl && callbackUrl.length ? callbackUrl : BRUNO_OAUTH2_CALLBACK_URL;
+    const effectiveCallbackUrl = callbackUrl && callbackUrl.length ? callbackUrl : CAFFEINE_OAUTH2_CALLBACK_URL;
     // Always append a cryptographically random nonce to the user-configured state
     // (or generate a fully random one when none is set). The state is validated when
     // the callback is received to prevent authorization code injection / CSRF.
@@ -776,7 +777,7 @@ const getOAuth2TokenUsingImplicitGrant = async ({ request, collectionUid, forceF
     additionalParameters
   } = oauth2;
   const useSystemBrowser = preferencesUtil.shouldUseSystemBrowser();
-  const effectiveCallbackUrl = callbackUrl && callbackUrl.length ? callbackUrl : BRUNO_OAUTH2_CALLBACK_URL;
+  const effectiveCallbackUrl = callbackUrl && callbackUrl.length ? callbackUrl : CAFFEINE_OAUTH2_CALLBACK_URL;
   // Use the user-configured state if present, otherwise generate a cryptographically
   // random one. The state is validated when the callback is received to prevent CSRF.
   const effectiveState = generateState({ userState: state });

@@ -1,7 +1,7 @@
 # bruno-converters
 
-The converters package is responsible for converting collections from one format to a Bruno collection.
-It can be used as a standalone package or as a part of the Bruno framework.
+The converters package is responsible for converting collections from one format to a Caffeine collection.
+It can be used as a standalone package or as a part of the Caffeine framework.
 
 ## Installation
 
@@ -11,16 +11,16 @@ npm install @usebruno/converters
 
 ## Usage
 
-### Convert Postman collection to Bruno collection
+### Convert Postman collection to Caffeine collection
 
 ```javascript
 const { postmanToBruno } = require('@usebruno/converters');
 
-// Convert Postman collection to Bruno collection
+// Convert Postman collection to Caffeine collection
 const brunoCollection = postmanToBruno(postmanCollection);
 ```
 
-### Convert Postman Environment to Bruno Environment
+### Convert Postman Environment to Caffeine Environment
 
 ```javascript
 const { postmanToBrunoEnvironment } = require('@usebruno/converters');
@@ -28,7 +28,7 @@ const { postmanToBrunoEnvironment } = require('@usebruno/converters');
 const brunoEnvironment = postmanToBrunoEnvironment(postmanEnvironment);
 ```
 
-### Convert Insomnia collection to Bruno collection
+### Convert Insomnia collection to Caffeine collection
 
 ```javascript
 const { insomniaToBruno } = require('@usebruno/converters');
@@ -36,7 +36,7 @@ const { insomniaToBruno } = require('@usebruno/converters');
 const brunoCollection = insomniaToBruno(insomniaCollection);
 ```
 
-### Convert OpenAPI specification to Bruno collection
+### Convert OpenAPI specification to Caffeine collection
 
 ```javascript
 const { openApiToBruno } = require('@usebruno/converters');
@@ -44,7 +44,7 @@ const { openApiToBruno } = require('@usebruno/converters');
 const brunoCollection = openApiToBruno(openApiSpecification);
 ```
 
-### Convert WSDL file to Bruno collection
+### Convert WSDL file to Caffeine collection
 
 ```javascript
 import { wsdlToBruno } from '@usebruno/converters';
@@ -77,7 +77,7 @@ convertPostmanToBruno('demo_collection.postman_collection.json', './bruno-collec
 The WSDL importer supports the following features:
 
 - **Service Discovery**: Automatically extracts service endpoints from WSDL definitions
-- **Operation Mapping**: Converts WSDL operations to Bruno HTTP requests
+- **Operation Mapping**: Converts WSDL operations to Caffeine HTTP requests
 - **SOAP Envelope Generation**: Creates proper SOAP envelopes for each operation
 - **Header Configuration**: Sets up appropriate Content-Type and SOAPAction headers
 - **Environment Variables**: Creates environment variables for service base URLs
@@ -103,17 +103,17 @@ importWSDL();
 
 ### CLI Usage
 
-You can also use the Bruno CLI to import WSDL files:
+You can also use the Caffeine CLI to import WSDL files:
 
 ```bash
 # Import WSDL file to a directory
-bruno import wsdl --source service.wsdl --output ~/Desktop/soap-collection --collection-name "SOAP Service"
+caffeine import wsdl --source service.wsdl --output ~/Desktop/soap-collection --collection-name "SOAP Service"
 
 # Import WSDL from URL
-bruno import wsdl --source https://example.com/service.wsdl --output ~/Desktop --collection-name "Remote SOAP Service"
+caffeine import wsdl --source https://example.com/service.wsdl --output ~/Desktop --collection-name "Remote SOAP Service"
 
 # Import WSDL and save as JSON file
-bruno import wsdl --source service.wsdl --output-file ~/Desktop/soap-collection.json --collection-name "SOAP Service"
+caffeine import wsdl --source service.wsdl --output-file ~/Desktop/soap-collection.json --collection-name "SOAP Service"
 ```
 
 ## Supported Formats

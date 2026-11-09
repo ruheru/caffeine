@@ -16,8 +16,12 @@ import nord from './dark/nord';
 import dracula from './dark/dracula';
 import vscodeDark from './dark/vscode';
 import cyberdreamDark from './dark/cyberdream-dark';
+import caffeineLight from './light/caffeine-light';
+import caffeineDark from './dark/caffeine-dark';
 
 const themes = {
+  'caffeine-light': caffeineLight,
+  'caffeine-dark': caffeineDark,
   light,
   dark,
   'light-monochrome': lightMonochrome,
@@ -44,6 +48,16 @@ const themes = {
 
 // Theme metadata for UI display
 export const themeRegistry = {
+  'caffeine-light': {
+    id: 'caffeine-light',
+    name: 'Caffeine Light',
+    mode: 'light'
+  },
+  'caffeine-dark': {
+    id: 'caffeine-dark',
+    name: 'Caffeine Dark',
+    mode: 'dark'
+  },
   'light': {
     id: 'light',
     name: 'Light',

@@ -19,14 +19,14 @@ const SUPPORT_GROUPS = [
       {
         key: 'documentation',
         icon: IconBook,
-        url: 'https://docs.usebruno.com',
+        url: 'https://github.com/umamlabs/caffeine',
         label: 'COMMON.DOCUMENTATION',
         description: 'SUPPORT.DOCUMENTATION_DESCRIPTION'
       },
       {
         key: 'report-issues',
         icon: IconSpeakerphone,
-        url: 'https://github.com/usebruno/bruno/issues',
+        url: 'https://github.com/umamlabs/caffeine/issues',
         label: 'COMMON.REPORT_ISSUES',
         description: 'SUPPORT.REPORT_ISSUES_DESCRIPTION'
       }
@@ -39,30 +39,9 @@ const SUPPORT_GROUPS = [
       {
         key: 'github',
         icon: IconBrandGithub,
-        url: 'https://github.com/usebruno/bruno',
+        url: 'https://github.com/umamlabs/caffeine',
         label: 'COMMON.GITHUB',
         description: 'SUPPORT.GITHUB_DESCRIPTION'
-      },
-      {
-        key: 'discord',
-        icon: IconBrandDiscord,
-        url: 'https://discord.com/invite/KgcZUncpjq',
-        label: 'COMMON.DISCORD',
-        description: 'SUPPORT.DISCORD_DESCRIPTION'
-      },
-      {
-        key: 'twitter',
-        icon: IconBrandTwitter,
-        url: 'https://twitter.com/use_bruno',
-        label: 'COMMON.TWITTER',
-        description: 'SUPPORT.TWITTER_DESCRIPTION'
-      },
-      {
-        key: 'linkedin',
-        icon: IconBrandLinkedin,
-        url: 'https://in.linkedin.com/company/usebruno',
-        label: 'COMMON.LINKEDIN',
-        description: 'SUPPORT.LINKEDIN_DESCRIPTION'
       }
     ]
   }

@@ -1,0 +1,1362 @@
+﻿
+> setup
+> node ./scripts/setup.js
+
+
+🧹 Cleaning up node_modules directories...
+
+⚡ Installing dependencies...
+node.exe : npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn deprec...onger supported:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security 
+vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be 
+purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security 
+vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be 
+purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security 
+vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be 
+purchased (at exorbitant rates) by contacting i@izs.me
+npm warn cleanup Failed to remove some directories [
+npm warn cleanup   [
+npm warn cleanup     'C:\\KhairulUmam\\Tools\\API 
+Tools\\node_modules\\@mapbox\\node-pre-gyp\\node_modules\\agent-base',
+npm warn cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\KhairulUmam\Tools\API 
+Tools\node_modules\@mapbox\node-pre-gyp\node_modules\agent-base'] {
+npm warn cleanup       errno: -4048,
+npm warn cleanup       code: 'EPERM',
+npm warn cleanup       syscall: 'rmdir',
+npm warn cleanup       path: 'C:\\KhairulUmam\\Tools\\API 
+Tools\\node_modules\\@mapbox\\node-pre-gyp\\node_modules\\agent-base'
+npm warn cleanup     }
+npm warn cleanup   ],
+npm warn cleanup   [
+npm warn cleanup     'C:\\KhairulUmam\\Tools\\API Tools\\node_modules\\@mapbox\\node-pre-gyp',
+npm warn cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\KhairulUmam\Tools\API 
+Tools\node_modules\@mapbox\node-pre-gyp\node_modules\readable-stream\lib\internal\streams'] {
+npm warn cleanup       errno: -4048,
+npm warn cleanup       code: 'EPERM',
+npm warn cleanup       syscall: 'rmdir',
+npm warn cleanup       path: 'C:\\KhairulUmam\\Tools\\API 
+Tools\\node_modules\\@mapbox\\node-pre-gyp\\node_modules\\readable-stream\\lib\\internal\\streams'
+npm warn cleanup     }
+npm warn cleanup   ]
+npm warn cleanup ]
+
+> prepare
+> husky
+
+
+added 2537 packages, and audited 2558 packages in 3m
+
+416 packages are looking for funding
+  run `npm fund` for details
+
+74 vulnerabilities (23 low, 45 moderate, 5 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+npm warn install-scripts 12 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.5.0 (install: node scripts/build-from-source.js)
+npm warn install-scripts   @scarf/scarf@1.4.0 (postinstall: node ./report.js)
+npm warn install-scripts   tree-sitter@0.22.4 (install: node-gyp-build)
+npm warn install-scripts   @tree-sitter-grammars/tree-sitter-yaml@0.7.1 (install: node-gyp-build)
+npm warn install-scripts   core-js@3.47.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts   core-js-pure@3.50.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   native-reg@1.1.1 (install: node-gyp-build-optional)
+npm warn install-scripts   protobufjs@7.6.5 (postinstall: node scripts/postinstall)
+npm warn install-scripts   tree-sitter@0.21.1 (install: node-gyp-build)
+npm warn install-scripts   tree-sitter-json@0.24.8 (install: node-gyp-build)
+npm warn install-scripts   win-export-certificate-and-key@2.1.0 (install: node-gyp rebuild)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+✅ Installing dependencies completed
+
+⚡ Installing platform specific dependencies...
+npm warn using --force Recommended protections disabled.
+npm warn cleanup Failed to remove some directories [
+npm warn cleanup   [
+npm warn cleanup     'C:\\KhairulUmam\\Tools\\API Tools\\node_modules\\@mapbox\\node-pre-gyp',
+npm warn cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\KhairulUmam\Tools\API 
+Tools\node_modules\@mapbox\node-pre-gyp\node_modules\readable-stream\lib'] {
+npm warn cleanup       errno: -4048,
+npm warn cleanup       code: 'EPERM',
+npm warn cleanup       syscall: 'rmdir',
+npm warn cleanup       path: 'C:\\KhairulUmam\\Tools\\API 
+Tools\\node_modules\\@mapbox\\node-pre-gyp\\node_modules\\readable-stream\\lib'
+npm warn cleanup     }
+npm warn cleanup   ]
+npm warn cleanup ]
+
+added 1 package, changed 2 packages, and audited 2559 packages in 19s
+
+416 packages are looking for funding
+  run `npm fund` for details
+
+74 vulnerabilities (23 low, 45 moderate, 5 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+npm warn install-scripts 12 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @parcel/watcher@2.5.0 (install: node-gyp rebuild)
+npm warn install-scripts   @scarf/scarf@1.4.0 (postinstall: node ./report.js)
+npm warn install-scripts   tree-sitter@0.22.4 (install: node-gyp rebuild)
+npm warn install-scripts   @tree-sitter-grammars/tree-sitter-yaml@0.7.1 (install: node-gyp rebuild)
+npm warn install-scripts   core-js@3.47.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts   core-js-pure@3.50.0 (postinstall: node -e "try{require('./postinstall')}catch(e){}")
+npm warn install-scripts   esbuild@0.28.2 (postinstall: node install.js)
+npm warn install-scripts   native-reg@1.1.1 (install: node-gyp rebuild)
+npm warn install-scripts   protobufjs@7.6.5 (postinstall: node scripts/postinstall)
+npm warn install-scripts   tree-sitter@0.21.1 (install: node-gyp rebuild)
+npm warn install-scripts   tree-sitter-json@0.24.8 (install: node-gyp rebuild)
+npm warn install-scripts   win-export-certificate-and-key@2.1.0 (install: node-gyp rebuild)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+✅ Installing platform specific dependencies completed
+
+⚡ Building graphql-docs...
+
+> build:graphql-docs
+> npm run build --workspace=packages/bruno-graphql-docs
+
+
+> @usebruno/graphql-docs@0.1.0 build
+> rollup -c
+
+
+src/index.ts → dist/cjs/index.js, dist/esm/index.js...
+created dist/cjs/index.js, dist/esm/index.js in 5.1s
+
+dist/esm/index.d.ts → dist/index.d.ts...
+created dist/index.d.ts in 23ms
+✅ Building graphql-docs completed
+
+⚡ Building bruno-query...
+
+> build:bruno-query
+> npm run build --workspace=packages/bruno-query
+
+
+> @usebruno/query@0.1.0 prebuild
+> npm run clean
+
+
+> @usebruno/query@0.1.0 clean
+> rimraf dist
+
+
+> @usebruno/query@0.1.0 build
+> rollup -c
+
+
+src/index.ts → dist/cjs/index.js, dist/esm/index.js...
+created dist/cjs/index.js, dist/esm/index.js in 2.9s
+
+dist/esm/index.d.ts → dist/index.d.ts...
+created dist/index.d.ts in 13ms
+✅ Building bruno-query completed
+
+⚡ Building bruno-common...
+
+> build:bruno-common
+> npm run build --workspace=packages/bruno-common
+
+
+> @usebruno/common@0.1.0 prebuild
+> npm run clean
+
+
+> @usebruno/common@0.1.0 clean
+> rimraf dist
+
+
+> @usebruno/common@0.1.0 build
+> rollup -c rollup.config.js
+
+
+src/index.ts → dist/cjs/index.js, dist/esm/index.js...
+created dist/cjs/index.js, dist/esm/index.js in 14.4s
+
+src/index.ts → dist/index.d.ts...
+created dist/index.d.ts in 2.3s
+
+src/runner/index.ts → dist/runner/cjs/index.js, dist/runner/esm/index.js...
+created dist/runner/cjs/index.js, dist/runner/esm/index.js in 3.5s
+
+src/runner/index.ts → dist/runner/index.d.ts...
+created dist/runner/index.d.ts in 1.7s
+
+src/utils/index.ts → dist/utils/cjs/index.js, dist/utils/esm/index.js...
+created dist/utils/cjs/index.js, dist/utils/esm/index.js in 4.1s
+
+src/utils/index.ts → dist/utils/index.d.ts...
+created dist/utils/index.d.ts in 1.6s
+✅ Building bruno-common completed
+
+⚡ Building bruno-converters...
+
+> build:bruno-converters
+> npm run build --workspace=packages/bruno-converters
+
+
+> @usebruno/converters@0.1.0 prebuild
+> npm run clean
+
+
+> @usebruno/converters@0.1.0 clean
+> rimraf dist
+
+
+> @usebruno/converters@0.1.0 build
+> rollup -c
+
+
+src/index.js → dist/cjs...
+(!) Plugin typescript: @rollup/plugin-typescript TS7006: Parameter 'field' implicitly has an 'any' type.
+src/opencollection/common/body.ts: (173:80)
+
+[7m173[0m       const formData: FormUrlEncodedEntry[] = (body.formUrlEncoded || []).map((field): FormUrlEncodedEntry 
+=> {
+[7m   [0m [91m                                                                               ~~~~~[0m
+
+src/opencollection/common/body.ts: (194:83)
+
+[7m194[0m       const multipartData: MultipartFormEntry[] = (body.multipartForm || []).map((field): 
+MultipartFormEntry => {
+[7m   [0m [91m                                                                                  ~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS7006: Parameter 'file' implicitly has an 'any' type.
+src/opencollection/common/body.ts: (220:66)
+
+[7m220[0m       const fileData: FileBodyVariant[] = (body.file || []).map((file): FileBodyVariant => {
+[7m   [0m [91m                                                                 ~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/collection/folder' 
+or its corresponding type declarations.
+src/opencollection/common/scripts.ts: (2:58)
+
+[7m2[0m import type { FolderRequest as BrunoFolderRequest } from '@usebruno/schema-types/collection/folder';
+[7m [0m [91m                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+src/opencollection/types.ts: (117:8)
+
+[7m117[0m } from '@usebruno/schema-types/collection/folder';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/requests/http' or 
+its corresponding type declarations.
+src/opencollection/common/scripts.ts: (3:54)
+
+[7m3[0m import type { HttpRequest as BrunoHttpRequest } from '@usebruno/schema-types/requests/http';
+[7m [0m [91m                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+src/opencollection/types.ts: (158:8)
+
+[7m158[0m } from '@usebruno/schema-types/requests/http';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module 
+'@usebruno/schema-types/requests/websocket' or its corresponding type declarations.
+src/opencollection/common/scripts.ts: (4:64)
+
+[7m4[0m import type { WebSocketRequest as BrunoWebSocketRequest } from '@usebruno/schema-types/requests/websocket';
+[7m [0m [91m                                                               
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+src/opencollection/types.ts: (169:8)
+
+[7m169[0m } from '@usebruno/schema-types/requests/websocket';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/requests/grpc' or 
+its corresponding type declarations.
+src/opencollection/common/scripts.ts: (5:54)
+
+[7m5[0m import type { GrpcRequest as BrunoGrpcRequest } from '@usebruno/schema-types/requests/grpc';
+[7m [0m [91m                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+src/opencollection/types.ts: (164:8)
+
+[7m164[0m } from '@usebruno/schema-types/requests/grpc';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2345: Argument of type 'string | number | symbol' is not assignable 
+to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'.
+src/opencollection/common/scripts.ts: (13:31)
+bol' is not assignable to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'.
+
+[7m13[0m     if (!allowedKeys.includes(key)) {
+[7m  [0m [91m                              ~~~[0m
+
+src/opencollection/common/scripts.ts: (53:31)
+bol' is not assignable to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'.
+
+[7m53[0m     if (!allowedKeys.includes(key)) {
+[7m  [0m [91m                              ~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS7006: Parameter 'v' implicitly has an 'any' type.
+src/opencollection/environment.ts: (89:45)
+
+[7m89[0m       variables: (env.variables || []).map((v): OCVariable => {
+[7m  [0m [91m                                            ~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/collection/item' 
+or its corresponding type declarations.
+src/opencollection/items/http.ts: (38:64)
+
+[7m38[0m import type { HttpItemSettings as BrunoHttpItemSettings } from '@usebruno/schema-types/collection/item';
+[7m  [0m [91m                                                               
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+src/opencollection/types.ts: (112:40)
+
+[7m112[0m export type { Item as BrunoItem } from '@usebruno/schema-types/collection/item';
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS7006: Parameter 'example' implicitly has an 'any' type.
+src/opencollection/items/http.ts: (248:45)
+
+[7m248[0m     ocRequest.examples = item.examples.map((example): HttpRequestExample => {
+[7m   [0m [91m                                            ~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module 
+'@usebruno/schema-types/collection/collection' or its corresponding type declarations.
+src/opencollection/types.ts: (118:52)
+
+[7m118[0m export type { Collection as BrunoCollection } from '@usebruno/schema-types/collection/collection';
+[7m   [0m [91m                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module 
+'@usebruno/schema-types/collection/environment' or its corresponding type declarations.
+src/opencollection/types.ts: (122:8)
+
+[7m122[0m } from '@usebruno/schema-types/collection/environment';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module 
+'@usebruno/schema-types/collection/examples' or its corresponding type declarations.
+src/opencollection/types.ts: (128:8)
+
+[7m128[0m } from '@usebruno/schema-types/collection/examples';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/key-value' 
+or its corresponding type declarations.
+src/opencollection/types.ts: (131:48)
+
+[7m131[0m export type { KeyValue as BrunoKeyValue } from '@usebruno/schema-types/common/key-value';
+[7m   [0m [91m                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/variables' 
+or its corresponding type declarations.
+src/opencollection/types.ts: (132:77)
+
+[7m132[0m export type { Variable as BrunoVariable, Variables as BrunoVariables } from 
+'@usebruno/schema-types/common/variables';
+[7m   [0m [91m                                                                            
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/scripts' or 
+its corresponding type declarations.
+src/opencollection/types.ts: (133:44)
+
+[7m133[0m export type { Script as BrunoScript } from '@usebruno/schema-types/common/scripts';
+[7m   [0m [91m                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/auth' or 
+its corresponding type declarations.
+src/opencollection/types.ts: (146:8)
+
+[7m146[0m } from '@usebruno/schema-types/common/auth';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module 
+'@usebruno/schema-types/common/multipart-form' or its corresponding type declarations.
+src/opencollection/types.ts: (147:105)
+
+[7m147[0m export type { MultipartFormEntry as BrunoMultipartFormEntry, MultipartForm as BrunoMultipartForm } from 
+'@usebruno/schema-types/common/multipart-form';
+[7m   [0m [91m                                                                                                      
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/file' or 
+its corresponding type declarations.
+src/opencollection/types.ts: (148:77)
+
+[7m148[0m export type { FileEntry as BrunoFileEntry, FileList as BrunoFileList } from 
+'@usebruno/schema-types/common/file';
+[7m   [0m [91m                                                                            
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/graphql' or 
+its corresponding type declarations.
+src/opencollection/types.ts: (149:54)
+
+[7m149[0m export type { GraphqlBody as BrunoGraphqlBody } from '@usebruno/schema-types/common/graphql';
+[7m   [0m [91m                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+created dist/cjs in 3.4s
+
+src/index.js → dist/esm...
+(!) Plugin typescript: @rollup/plugin-typescript TS7006: Parameter 'field' implicitly has an 'any' type.
+src/opencollection/common/body.ts: (173:80)
+
+[7m173[0m       const formData: FormUrlEncodedEntry[] = (body.formUrlEncoded || []).map((field): FormUrlEncodedEntry 
+=> {
+[7m   [0m [91m                                                                               ~~~~~[0m
+
+src/opencollection/common/body.ts: (194:83)
+
+[7m194[0m       const multipartData: MultipartFormEntry[] = (body.multipartForm || []).map((field): 
+MultipartFormEntry => {
+[7m   [0m [91m                                                                                  ~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS7006: Parameter 'file' implicitly has an 'any' type.
+src/opencollection/common/body.ts: (220:66)
+
+[7m220[0m       const fileData: FileBodyVariant[] = (body.file || []).map((file): FileBodyVariant => {
+[7m   [0m [91m                                                                 ~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/collection/folder' 
+or its corresponding type declarations.
+src/opencollection/common/scripts.ts: (2:58)
+
+[7m2[0m import type { FolderRequest as BrunoFolderRequest } from '@usebruno/schema-types/collection/folder';
+[7m [0m [91m                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+src/opencollection/types.ts: (117:8)
+
+[7m117[0m } from '@usebruno/schema-types/collection/folder';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/requests/http' or 
+its corresponding type declarations.
+src/opencollection/common/scripts.ts: (3:54)
+
+[7m3[0m import type { HttpRequest as BrunoHttpRequest } from '@usebruno/schema-types/requests/http';
+[7m [0m [91m                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+src/opencollection/types.ts: (158:8)
+
+[7m158[0m } from '@usebruno/schema-types/requests/http';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module 
+'@usebruno/schema-types/requests/websocket' or its corresponding type declarations.
+src/opencollection/common/scripts.ts: (4:64)
+
+[7m4[0m import type { WebSocketRequest as BrunoWebSocketRequest } from '@usebruno/schema-types/requests/websocket';
+[7m [0m [91m                                                               
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+src/opencollection/types.ts: (169:8)
+
+[7m169[0m } from '@usebruno/schema-types/requests/websocket';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/requests/grpc' or 
+its corresponding type declarations.
+src/opencollection/common/scripts.ts: (5:54)
+
+[7m5[0m import type { GrpcRequest as BrunoGrpcRequest } from '@usebruno/schema-types/requests/grpc';
+[7m [0m [91m                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+src/opencollection/types.ts: (164:8)
+
+[7m164[0m } from '@usebruno/schema-types/requests/grpc';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2345: Argument of type 'string | number | symbol' is not assignable 
+to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'.
+src/opencollection/common/scripts.ts: (13:31)
+bol' is not assignable to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'.
+
+[7m13[0m     if (!allowedKeys.includes(key)) {
+[7m  [0m [91m                              ~~~[0m
+
+src/opencollection/common/scripts.ts: (53:31)
+bol' is not assignable to parameter of type 'string'.
+  Type 'number' is not assignable to type 'string'.
+
+[7m53[0m     if (!allowedKeys.includes(key)) {
+[7m  [0m [91m                              ~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS7006: Parameter 'v' implicitly has an 'any' type.
+src/opencollection/environment.ts: (89:45)
+
+[7m89[0m       variables: (env.variables || []).map((v): OCVariable => {
+[7m  [0m [91m                                            ~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/collection/item' 
+or its corresponding type declarations.
+src/opencollection/items/http.ts: (38:64)
+
+[7m38[0m import type { HttpItemSettings as BrunoHttpItemSettings } from '@usebruno/schema-types/collection/item';
+[7m  [0m [91m                                                               
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+src/opencollection/types.ts: (112:40)
+
+[7m112[0m export type { Item as BrunoItem } from '@usebruno/schema-types/collection/item';
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS7006: Parameter 'example' implicitly has an 'any' type.
+src/opencollection/items/http.ts: (248:45)
+
+[7m248[0m     ocRequest.examples = item.examples.map((example): HttpRequestExample => {
+[7m   [0m [91m                                            ~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module 
+'@usebruno/schema-types/collection/collection' or its corresponding type declarations.
+src/opencollection/types.ts: (118:52)
+
+[7m118[0m export type { Collection as BrunoCollection } from '@usebruno/schema-types/collection/collection';
+[7m   [0m [91m                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module 
+'@usebruno/schema-types/collection/environment' or its corresponding type declarations.
+src/opencollection/types.ts: (122:8)
+
+[7m122[0m } from '@usebruno/schema-types/collection/environment';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module 
+'@usebruno/schema-types/collection/examples' or its corresponding type declarations.
+src/opencollection/types.ts: (128:8)
+
+[7m128[0m } from '@usebruno/schema-types/collection/examples';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/key-value' 
+or its corresponding type declarations.
+src/opencollection/types.ts: (131:48)
+
+[7m131[0m export type { KeyValue as BrunoKeyValue } from '@usebruno/schema-types/common/key-value';
+[7m   [0m [91m                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/variables' 
+or its corresponding type declarations.
+src/opencollection/types.ts: (132:77)
+
+[7m132[0m export type { Variable as BrunoVariable, Variables as BrunoVariables } from 
+'@usebruno/schema-types/common/variables';
+[7m   [0m [91m                                                                            
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/scripts' or 
+its corresponding type declarations.
+src/opencollection/types.ts: (133:44)
+
+[7m133[0m export type { Script as BrunoScript } from '@usebruno/schema-types/common/scripts';
+[7m   [0m [91m                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/auth' or 
+its corresponding type declarations.
+src/opencollection/types.ts: (146:8)
+
+[7m146[0m } from '@usebruno/schema-types/common/auth';
+[7m   [0m [91m       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module 
+'@usebruno/schema-types/common/multipart-form' or its corresponding type declarations.
+src/opencollection/types.ts: (147:105)
+
+[7m147[0m export type { MultipartFormEntry as BrunoMultipartFormEntry, MultipartForm as BrunoMultipartForm } from 
+'@usebruno/schema-types/common/multipart-form';
+[7m   [0m [91m                                                                                                      
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/file' or 
+its corresponding type declarations.
+src/opencollection/types.ts: (148:77)
+
+[7m148[0m export type { FileEntry as BrunoFileEntry, FileList as BrunoFileList } from 
+'@usebruno/schema-types/common/file';
+[7m   [0m [91m                                                                            
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS2307: Cannot find module '@usebruno/schema-types/common/graphql' or 
+its corresponding type declarations.
+src/opencollection/types.ts: (149:54)
+
+[7m149[0m export type { GraphqlBody as BrunoGraphqlBody } from '@usebruno/schema-types/common/graphql';
+[7m   [0m [91m                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+created dist/esm in 3s
+✅ Building bruno-converters completed
+
+⚡ Building bruno-requests...
+
+> build:bruno-requests
+> npm run build --workspace=packages/bruno-requests
+
+
+> @usebruno/requests@0.1.0 prebuild
+> npm run clean
+
+
+> @usebruno/requests@0.1.0 clean
+> rimraf dist
+
+
+> @usebruno/requests@0.1.0 build
+> rollup -c
+
+
+src/index.ts → dist/cjs/index.js, dist/esm/index.js...
+(!) Plugin typescript: @rollup/plugin-typescript TS1139: Type parameter declaration expected.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3172:13)
+
+[7m3172[0m     shuffle<const T>(list: T[], options: {
+[7m    [0m [91m            ~~~~~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1434: Unexpected keyword or identifier.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3172:19)
+
+[7m3172[0m     shuffle<const T>(list: T[], options: {
+[7m    [0m [91m                  ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3249:72)
+
+[7m3249[0m     uniqueArray<const T>(source: ReadonlyArray<T> | (() => T), length: number): T[];
+[7m    [0m [91m                                                                       ~~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3305:64)
+
+[7m3305[0m     objectKey<const T extends Record<string, unknown>>(object: T): keyof T;
+[7m    [0m [91m                                                               ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3305:68)
+
+[7m3305[0m     objectKey<const T extends Record<string, unknown>>(object: T): keyof T;
+[7m    [0m [91m                                                                   ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3320:66)
+
+[7m3320[0m     objectValue<const T extends Record<string, unknown>>(object: T): T[keyof T];
+[7m    [0m [91m                                                                 ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:66)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                                                                 ~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1068: Unexpected token. A constructor, method, accessor, or 
+property was expected.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3172:20)
+
+[7m3172[0m     shuffle<const T>(list: T[], options: {
+[7m    [0m [91m                   ~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1005: ')' expected.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3172:26)
+
+[7m3172[0m     shuffle<const T>(list: T[], options: {
+[7m    [0m [91m                         ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3195:26)
+
+[7m3195[0m     shuffle<const T>(list: ReadonlyArray<T>, options?: {
+[7m    [0m [91m                         ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3219:26)
+
+[7m3219[0m     shuffle<const T>(list: T[], options?: {
+[7m    [0m [91m                         ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3249:32)
+
+[7m3249[0m     uniqueArray<const T>(source: ReadonlyArray<T> | (() => T), length: number): T[];
+[7m    [0m [91m                               ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3283:34)
+
+[7m3283[0m     maybe<const TResult>(callback: () => TResult, options?: {
+[7m    [0m [91m                                 ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3305:62)
+
+[7m3305[0m     objectKey<const T extends Record<string, unknown>>(object: T): keyof T;
+[7m    [0m [91m                                                             ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3320:64)
+
+[7m3320[0m     objectValue<const T extends Record<string, unknown>>(object: T): T[keyof T];
+[7m    [0m [91m                                                               ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:64)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                                                               ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3350:32)
+
+[7m3350[0m     arrayElement<const T>(array: ReadonlyArray<T>): T;
+[7m    [0m [91m                               ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3370:40)
+
+[7m3370[0m     weightedArrayElement<const T>(array: ReadonlyArray<{
+[7m    [0m [91m                                       ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3397:33)
+
+[7m3397[0m     arrayElements<const T>(array: ReadonlyArray<T>, count?: number | {
+[7m    [0m [91m                                ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3469:35)
+
+[7m3469[0m     multiple<const TResult>(method: (v: unknown, index: number) => TResult, options?: {
+[7m    [0m [91m                                  ~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1011: An element access expression should take an argument.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3172:30)
+
+[7m3172[0m     shuffle<const T>(list: T[], options: {
+[7m    [0m [91m                             [0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3179:11)
+
+[7m3179[0m     }): T[];
+[7m    [0m [91m          [0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3202:11)
+
+[7m3202[0m     }): T[];
+[7m    [0m [91m          [0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3219:30)
+
+[7m3219[0m     shuffle<const T>(list: T[], options?: {
+[7m    [0m [91m                             [0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3226:11)
+
+[7m3226[0m     }): T[];
+[7m    [0m [91m          [0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3249:83)
+
+[7m3249[0m     uniqueArray<const T>(source: ReadonlyArray<T> | (() => T), length: number): T[];
+[7m    [0m [91m                                                                                  [0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3406:11)
+
+[7m3406[0m     }): T[];
+[7m    [0m [91m          [0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3485:17)
+
+[7m3485[0m     }): TResult[];
+[7m    [0m [91m                [0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1005: ';' expected.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3172:40)
+
+[7m3172[0m     shuffle<const T>(list: T[], options: {
+[7m    [0m [91m                                       ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3202:6)
+
+[7m3202[0m     }): T[];
+[7m    [0m [91m     ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3226:6)
+
+[7m3226[0m     }): T[];
+[7m    [0m [91m     ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3249:70)
+
+[7m3249[0m     uniqueArray<const T>(source: ReadonlyArray<T> | (() => T), length: number): T[];
+[7m    [0m [91m                                                                     ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3266:104)
+
+[7m3266[0m     mustache(text: string | undefined, data: Record<string, string | Parameters<string['replace']>[1]>): 
+string;
+[7m    [0m [91m                                                                                                     
+  ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3290:6)
+
+[7m3290[0m     }): TResult | undefined;
+[7m    [0m [91m     ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:90)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                                                                                         ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3350:50)
+
+[7m3350[0m     arrayElement<const T>(array: ReadonlyArray<T>): T;
+[7m    [0m [91m                                                 ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3379:7)
+
+[7m3379[0m     }>): T;
+[7m    [0m [91m      ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3406:6)
+
+[7m3406[0m     }): T[];
+[7m    [0m [91m     ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3428:81)
+
+[7m3428[0m     enumValue<T extends Record<string | number, string | number>>(enumObject: T): T[keyof T];
+[7m    [0m [91m                                                                                ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3451:7)
+
+[7m3451[0m     }): number;
+[7m    [0m [91m      ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3485:6)
+
+[7m3485[0m     }): TResult[];
+[7m    [0m [91m     ~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1128: Declaration or statement expected.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3179:6)
+
+[7m3179[0m     }): T[];
+[7m    [0m [91m     ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3179:7)
+
+[7m3179[0m     }): T[];
+[7m    [0m [91m      ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3202:7)
+
+[7m3202[0m     }): T[];
+[7m    [0m [91m      ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3226:7)
+
+[7m3226[0m     }): T[];
+[7m    [0m [91m      ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3249:78)
+
+[7m3249[0m     uniqueArray<const T>(source: ReadonlyArray<T> | (() => T), length: number): T[];
+[7m    [0m [91m                                                                             ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3249:79)
+
+[7m3249[0m     uniqueArray<const T>(source: ReadonlyArray<T> | (() => T), length: number): T[];
+[7m    [0m [91m                                                                              ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3290:7)
+
+[7m3290[0m     }): TResult | undefined;
+[7m    [0m [91m      ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3305:65)
+
+[7m3305[0m     objectKey<const T extends Record<string, unknown>>(object: T): keyof T;
+[7m    [0m [91m                                                                ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3305:66)
+
+[7m3305[0m     objectKey<const T extends Record<string, unknown>>(object: T): keyof T;
+[7m    [0m [91m                                                                 ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3320:67)
+
+[7m3320[0m     objectValue<const T extends Record<string, unknown>>(object: T): T[keyof T];
+[7m    [0m [91m                                                                  ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3320:68)
+
+[7m3320[0m     objectValue<const T extends Record<string, unknown>>(object: T): T[keyof T];
+[7m    [0m [91m                                                                   ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3320:79)
+
+[7m3320[0m     objectValue<const T extends Record<string, unknown>>(object: T): T[keyof T];
+[7m    [0m [91m                                                                              ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:67)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                                                                  ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:68)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                                                                   ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3350:51)
+
+[7m3350[0m     arrayElement<const T>(array: ReadonlyArray<T>): T;
+[7m    [0m [91m                                                  ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3379:8)
+
+[7m3379[0m     }>): T;
+[7m    [0m [91m       ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3406:7)
+
+[7m3406[0m     }): T[];
+[7m    [0m [91m      ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3428:92)
+
+[7m3428[0m     enumValue<T extends Record<string | number, string | number>>(enumObject: T): T[keyof T];
+[7m    [0m [91m                                                                                           ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3485:7)
+
+[7m3485[0m     }): TResult[];
+[7m    [0m [91m      ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3486:1)
+
+[7m3486[0m }
+[7m    [0m [91m~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1109: Expression expected.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3195:13)
+
+[7m3195[0m     shuffle<const T>(list: ReadonlyArray<T>, options?: {
+[7m    [0m [91m            ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3195:54)
+
+[7m3195[0m     shuffle<const T>(list: ReadonlyArray<T>, options?: {
+[7m    [0m [91m                                                     ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3219:13)
+
+[7m3219[0m     shuffle<const T>(list: T[], options?: {
+[7m    [0m [91m            ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3219:41)
+
+[7m3219[0m     shuffle<const T>(list: T[], options?: {
+[7m    [0m [91m                                        ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3249:17)
+
+[7m3249[0m     uniqueArray<const T>(source: ReadonlyArray<T> | (() => T), length: number): T[];
+[7m    [0m [91m                ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3283:11)
+
+[7m3283[0m     maybe<const TResult>(callback: () => TResult, options?: {
+[7m    [0m [91m          ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3283:59)
+
+[7m3283[0m     maybe<const TResult>(callback: () => TResult, options?: {
+[7m    [0m [91m                                                          ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3305:15)
+
+[7m3305[0m     objectKey<const T extends Record<string, unknown>>(object: T): keyof T;
+[7m    [0m [91m              ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3320:17)
+
+[7m3320[0m     objectValue<const T extends Record<string, unknown>>(object: T): T[keyof T];
+[7m    [0m [91m                ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:17)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3350:18)
+
+[7m3350[0m     arrayElement<const T>(array: ReadonlyArray<T>): T;
+[7m    [0m [91m                 ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3370:26)
+
+[7m3370[0m     weightedArrayElement<const T>(array: ReadonlyArray<{
+[7m    [0m [91m                         ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3397:19)
+
+[7m3397[0m     arrayElements<const T>(array: ReadonlyArray<T>, count?: number | {
+[7m    [0m [91m                  ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3397:59)
+
+[7m3397[0m     arrayElements<const T>(array: ReadonlyArray<T>, count?: number | {
+[7m    [0m [91m                                                          ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3469:14)
+
+[7m3469[0m     multiple<const TResult>(method: (v: unknown, index: number) => TResult, options?: {
+[7m    [0m [91m             ~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3469:85)
+
+[7m3469[0m     multiple<const TResult>(method: (v: unknown, index: number) => TResult, options?: {
+[7m    [0m [91m                                                                                    ~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1005: ',' expected.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3195:20)
+
+[7m3195[0m     shuffle<const T>(list: ReadonlyArray<T>, options?: {
+[7m    [0m [91m                   ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3201:24)
+
+[7m3201[0m         inplace?: false;
+[7m    [0m [91m                       ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3219:20)
+
+[7m3219[0m     shuffle<const T>(list: T[], options?: {
+[7m    [0m [91m                   ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3225:26)
+
+[7m3225[0m         inplace?: boolean;
+[7m    [0m [91m                         ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3249:24)
+
+[7m3249[0m     uniqueArray<const T>(source: ReadonlyArray<T> | (() => T), length: number): T[];
+[7m    [0m [91m                       ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3266:18)
+
+[7m3266[0m     mustache(text: string | undefined, data: Record<string, string | Parameters<string['replace']>[1]>): 
+string;
+[7m    [0m [91m                 ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3266:44)
+
+[7m3266[0m     mustache(text: string | undefined, data: Record<string, string | Parameters<string['replace']>[1]>): 
+string;
+[7m    [0m [91m                                           ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3283:24)
+
+[7m3283[0m     maybe<const TResult>(callback: () => TResult, options?: {
+[7m    [0m [91m                       ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3289:29)
+
+[7m3289[0m         probability?: number;
+[7m    [0m [91m                            ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3305:23)
+
+[7m3305[0m     objectKey<const T extends Record<string, unknown>>(object: T): keyof T;
+[7m    [0m [91m                      ~~~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3305:37)
+
+[7m3305[0m     objectKey<const T extends Record<string, unknown>>(object: T): keyof T;
+[7m    [0m [91m                                    ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3320:25)
+
+[7m3320[0m     objectValue<const T extends Record<string, unknown>>(object: T): T[keyof T];
+[7m    [0m [91m                        ~~~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3320:39)
+
+[7m3320[0m     objectValue<const T extends Record<string, unknown>>(object: T): T[keyof T];
+[7m    [0m [91m                                      ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:25)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                        ~~~~~~~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:39)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                                      ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:77)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                                                                            ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3350:25)
+
+[7m3350[0m     arrayElement<const T>(array: ReadonlyArray<T>): T;
+[7m    [0m [91m                        ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3370:33)
+
+[7m3370[0m     weightedArrayElement<const T>(array: ReadonlyArray<{
+[7m    [0m [91m                                ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3397:26)
+
+[7m3397[0m     arrayElements<const T>(array: ReadonlyArray<T>, count?: number | {
+[7m    [0m [91m                         ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3401:20)
+
+[7m3401[0m         min: number;
+[7m    [0m [91m                   ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3405:20)
+
+[7m3405[0m         max: number;
+[7m    [0m [91m                   ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3428:77)
+
+[7m3428[0m     enumValue<T extends Record<string | number, string | number>>(enumObject: T): T[keyof T];
+[7m    [0m [91m                                                                            ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3442:32)
+
+[7m3442[0m     rangeToNumber(numberOrRange: number | {
+[7m    [0m [91m                               ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3446:20)
+
+[7m3446[0m         min: number;
+[7m    [0m [91m                   ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3450:20)
+
+[7m3450[0m         max: number;
+[7m    [0m [91m                   ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3469:27)
+
+[7m3469[0m     multiple<const TResult>(method: (v: unknown, index: number) => TResult, options?: {
+[7m    [0m [91m                          ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3479:24)
+
+[7m3479[0m             min: number;
+[7m    [0m [91m                       ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3483:24)
+
+[7m3483[0m             max: number;
+[7m    [0m [91m                       ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3484:10)
+
+[7m3484[0m         };
+[7m    [0m [91m         ~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1005: '>' expected.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3305:44)
+
+[7m3305[0m     objectKey<const T extends Record<string, unknown>>(object: T): keyof T;
+[7m    [0m [91m                                           ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3320:46)
+
+[7m3320[0m     objectValue<const T extends Record<string, unknown>>(object: T): T[keyof T];
+[7m    [0m [91m                                             ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:46)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                                             ~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1005: ']' expected.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3320:78)
+
+[7m3320[0m     objectValue<const T extends Record<string, unknown>>(object: T): T[keyof T];
+[7m    [0m [91m                                                                             ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3335:88)
+
+[7m3335[0m     objectEntry<const T extends Record<string, unknown>>(object: T): [keyof T, T[keyof T]];
+[7m    [0m [91m                                                                                       ~[0m
+
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3428:91)
+
+[7m3428[0m     enumValue<T extends Record<string | number, string | number>>(enumObject: T): T[keyof T];
+[7m    [0m [91m                                                                                          ~[0m
+
+(!) Plugin typescript: @rollup/plugin-typescript TS1005: '?' expected.
+node_modules/@faker-js/faker/dist/airline-CLphikKp.d.ts: (3428:65)
+
+[7m3428[0m     enumValue<T extends Record<string | number, string | number>>(enumObject: T): T[keyof T];
+[7m    [0m [91m                                                                ~[0m
+
+(!) Circular dependencies
+../../node_modules/@grpc/grpc-js/build/src/channel.js -> 
+../../node_modules/@grpc/grpc-js/build/src/internal-channel.js -> 
+../../node_modules/@grpc/grpc-js/build/src/subchannel-pool.js -> 
+../../node_modules/@grpc/grpc-js/build/src/subchannel.js -> ../../node_modules/@grpc/grpc-js/build/src/channelz.js -> 
+../../node_modules/@grpc/grpc-js/build/src/make-client.js -> ../../node_modules/@grpc/grpc-js/build/src/client.js -> 
+../../node_modules/@grpc/grpc-js/build/src/channel.js
+../../node_modules/protobufjs/src/util/minimal.js -> ../../node_modules/protobufjs/src/util/longbits.js -> 
+../../node_modules/protobufjs/src/util/minimal.js
+../../node_modules/protobufjs/src/object.js -> ../../node_modules/protobufjs/src/oneof.js -> 
+../../node_modules/protobufjs/src/object.js
+...and 29 more
+(!) Use of eval is strongly discouraged
+https://rollupjs.org/troubleshooting/#avoiding-eval
+../../node_modules/google-protobuf/google-protobuf.js
+19: goog.hasBadLetScoping=null;
+20: goog.loadModule=function(a){var b=goog.moduleLoaderState_;try{goog.moduleLoaderState_={moduleName:"",declareLegacyN
+amespace:!1,type:goog.ModuleType.GOOG};var c={},d=c;if("function"===typeof a)d=a.call(void 0,d);else 
+if("string"===typeof a)d=goog.loadModuleFromSource_.call(void 0,d,a);else throw Er...
+21: Object.seal&&"object"==typeof d&&null!=d&&Object.seal(d),goog.loadedModules_[e]={exports:d,type:goog.ModuleType.GOO
+G,moduleId:goog.moduleLoaderState_.moduleName};else throw Error('Invalid module name 
+"'+e+'"');}finally{goog.moduleLoaderState_=b}};goog.loadModuleFromSource_=function(a,b){eval(goog....
+                                                                                                                       
+                                                                                                                       
+                                                      ^
+22: goog.loadFileSync_=function(a){if(goog.global.CLOSURE_LOAD_FILE_SYNC)return 
+goog.global.CLOSURE_LOAD_FILE_SYNC(a);try{var b=new goog.global.XMLHttpRequest;b.open("get",a,!1);b.send();return 
+0==b.status||200==b.status?b.responseText:null}catch(c){return null}};goog.typeOf=function(a){var b=typeof a...
+23: goog.isDateLike=function(a){return goog.isObject(a)&&"function"==typeof 
+a.getFullYear};goog.isObject=function(a){var b=typeof 
+a;return"object"==b&&null!=a||"function"==b};goog.getUid=function(a){return 
+Object.prototype.hasOwnProperty.call(a,goog.UID_PROPERTY_)&&a[goog.UID_PROPERTY_]||(a[goog.UID_P...
+...and 1 other occurrence
+created dist/cjs/index.js, dist/esm/index.js in 17.1s
+✅ Building bruno-requests completed
+
+⚡ Building schema-types...
+
+> build:schema-types
+> npm run build --workspace=packages/bruno-schema-types
+
+
+> @usebruno/schema-types@0.0.1 build
+> tsc -p tsconfig.json
+
+✅ Building schema-types completed
+
+⚡ Building bruno-filestore...
+
+> build:bruno-filestore
+> npm run build --workspace=packages/bruno-filestore
+
+
+> @usebruno/filestore@0.1.0 prebuild
+> npm run clean
+
+
+> @usebruno/filestore@0.1.0 clean
+> rimraf dist
+
+
+> @usebruno/filestore@0.1.0 build
+> rollup -c && tsc --emitDeclarationOnly -p tsconfig.build.json
+
+
+src/index.ts → dist/cjs/index.js, dist/esm/index.js...
+created dist/cjs/index.js, dist/esm/index.js in 3s
+
+src/workers/worker-script.ts → dist/cjs/workers/worker-script.js, dist/esm/workers/worker-script.js...
+created dist/cjs/workers/worker-script.js, dist/esm/workers/worker-script.js in 2.2s
+✅ Building bruno-filestore completed
+
+⚡ Building bruno-io...
+
+> build:bruno-io
+> npm run build --workspace=packages/bruno-io
+
+
+> @usebruno/io@0.1.0 prebuild
+> npm run clean
+
+
+> @usebruno/io@0.1.0 clean
+> rimraf dist
+
+
+> @usebruno/io@0.1.0 build
+> rollup -c && tsc --emitDeclarationOnly -p tsconfig.build.json
+
+
+src/index.ts → dist/cjs/index.js, dist/esm/index.js...
+created dist/cjs/index.js, dist/esm/index.js in 1.1s
+✅ Building bruno-io completed
+
+⚡ Building bruno-sqlite...
+
+> build:bruno-sqlite
+> npm run build --workspace=packages/bruno-sqlite
+
+
+> @usebruno/sqlite@0.1.0 prebuild
+> npm run clean && npm run generate
+
+
+> @usebruno/sqlite@0.1.0 clean
+> rimraf dist
+
+
+> @usebruno/sqlite@0.1.0 generate
+> tsx scripts/generate-artifacts.ts
+
+Generated 5 migration(s) and 19 statement(s).
+
+> @usebruno/sqlite@0.1.0 build
+> rollup -c
+
+
+src/node/index.ts → dist/node/cjs/index.js, dist/node/esm/index.js...
+created dist/node/cjs/index.js, dist/node/esm/index.js in 1.4s
+
+src/node/index.ts → dist/node/index.d.ts...
+created dist/node/index.d.ts in 791ms
+✅ Building bruno-sqlite completed
+
+⚡ Bundling JS sandbox libraries...
+
+> @usebruno/js@0.12.0 sandbox:bundle-libraries
+> node ./src/sandbox/bundle-libraries.js
+
+Circular dependency: ../../node_modules/chai/lib/chai.js -> ../../node_modules/chai/lib/chai/utils/index.js -> 
+../../node_modules/chai/lib/chai/utils/addProperty.js -> ../../node_modules/chai/lib/chai.js
+Circular dependency: ../../node_modules/chai/lib/chai.js -> ../../node_modules/chai/lib/chai/utils/index.js -> 
+../../node_modules/chai/lib/chai/utils/addMethod.js -> ../../node_modules/chai/lib/chai.js
+Circular dependency: ../../node_modules/chai/lib/chai.js -> ../../node_modules/chai/lib/chai/utils/index.js -> 
+../../node_modules/chai/lib/chai/utils/overwriteProperty.js -> ../../node_modules/chai/lib/chai.js
+Circular dependency: ../../node_modules/chai/lib/chai.js -> ../../node_modules/chai/lib/chai/utils/index.js -> 
+../../node_modules/chai/lib/chai/utils/overwriteMethod.js -> ../../node_modules/chai/lib/chai.js
+Circular dependency: ../../node_modules/chai/lib/chai.js -> ../../node_modules/chai/lib/chai/utils/index.js -> 
+../../node_modules/chai/lib/chai/utils/addChainableMethod.js -> ../../node_modules/chai/lib/chai.js
+Circular dependency: ../../node_modules/chai/lib/chai.js -> ../../node_modules/chai/lib/chai/utils/index.js -> 
+../../node_modules/chai/lib/chai/utils/overwriteChainableMethod.js -> ../../node_modules/chai/lib/chai.js
+✅ Bundling JS sandbox libraries completed
+
+✅ Setup completed successfully!
+
+EXIT: 0

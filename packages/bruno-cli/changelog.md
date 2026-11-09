@@ -2,13 +2,13 @@
 
 ## 6 Feb 2024
 
-Going forward, we will release a new version of CLI for every new release of Bruno.
-This will help us keep the CLI in sync with the Bruno App.
-For the release notes please see https://github.com/usebruno/bruno/releases
+Going forward, we will release a new version of CLI for every new release of Caffeine.
+This will help us keep the CLI in sync with the Caffeine App.
+For the release notes please see https://github.com/umamlabs/caffeine/releases
 
 ## 1.4.1
 
-- Fixing [bug](https://github.com/usebruno/bruno/issues/1487)
+- Fixing [bug](https://github.com/umamlabs/caffeine/issues/1487)
 
 ## 1.4.0
 

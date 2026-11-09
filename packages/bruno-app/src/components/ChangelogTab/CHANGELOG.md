@@ -1,8 +1,8 @@
-## What's New in Bruno v4.4.0
+## What's New in Caffeine v4.4.0
 
 ### 1Password Secret Manager
 
-Bruno now reads secrets from 1Password through the 1Password Connect server. Add a 1Password account in the Secret Manager, pick the vaults to expose, and reference secrets with the same `{{secret.}}` syntax used by Doppler, Infisical and HashiCorp Vault.
+Caffeine now reads secrets from 1Password through the 1Password Connect server. Add a 1Password account in the Secret Manager, pick the vaults to expose, and reference secrets with the same `{{secret.}}` syntax used by Doppler, Infisical and HashiCorp Vault.
 
 ![1Password account set up](https://d3icksk7srk4uh.cloudfront.net/4.4.0/1pass.png)
 
@@ -19,7 +19,7 @@ Bruno now reads secrets from 1Password through the 1Password Connect server. Add
 
 * **Scope-aware ranking.** OAuth2 credentials are ranked below dynamic variables, and process-env entries stay in the list until explicitly dismissed.
 * **Readable suggestions.** Long variable names are no longer truncated, and the suggestion no longer deletes text after the cursor.
-* **Save as secret, inline.** When a sensitive value is detected in a credential field, Bruno offers to save it as a secret variable from the warning tooltip, in one click.
+* **Save as secret, inline.** When a sensitive value is detected in a credential field, Caffeine offers to save it as a secret variable from the warning tooltip, in one click.
 
 ![Save a sensitive value as a secret from the warning tooltip](https://d3icksk7srk4uh.cloudfront.net/4.4.0/secret-values.png)
 
@@ -50,4 +50,4 @@ GitHub SAML SSO failures on push and pull now show the actual error from GitHub 
 
 ---
 
-For the complete list of changes, see the [Release changelog](https://www.usebruno.com/changelog).
+For the complete list of changes, see the [Release changelog](https://github.com/umamlabs/caffeine/releases).

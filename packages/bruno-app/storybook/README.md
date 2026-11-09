@@ -1,6 +1,6 @@
 # Storybook
 
-Storybook is our workbench and living documentation for the `bruno-app` UI — primarily the design-system primitives under `src/ui`. Use it to build a component in isolation, see every state at once, and check how it looks across Bruno's themes.
+Storybook is our workbench and living documentation for the `bruno-app` UI — primarily the design-system primitives under `src/ui`. Use it to build a component in isolation, see every state at once, and check how it looks across Caffeine's themes.
 
 ## Running
 
@@ -47,7 +47,7 @@ Theming is automatic — `preview.jsx` wraps every story in the styled-component
 
 ## Theme switching
 
-The toolbar has a **Theme** picker listing all of Bruno's registered themes (from `themes/index.js` `themeRegistry`). Selecting one re-renders the current story with that theme's real tokens and sets the preview's light/dark mode.
+The toolbar has a **Theme** picker listing all of Caffeine's registered themes (from `themes/index.js` `themeRegistry`). Selecting one re-renders the current story with that theme's real tokens and sets the preview's light/dark mode.
 
 Note: components styled via styled-components `props.theme` (nearly all of `src/ui`) get full per-theme accuracy. Anything relying on raw `var(--color-*)` CSS variables only toggles light vs dark, since those variables aren't per-theme.
 

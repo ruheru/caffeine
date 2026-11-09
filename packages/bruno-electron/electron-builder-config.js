@@ -3,8 +3,8 @@ require('dotenv').config({ path: process.env.DOTENV_PATH });
 const isBenchmark = process.env.BRUNO_BENCHMARK === 'true';
 
 const config = {
-  appId: 'com.usebruno.app',
-  productName: isBenchmark ? 'Bruno Benchmark' : 'Bruno',
+  appId: 'com.caffeine.app',
+  productName: isBenchmark ? 'Caffeine Benchmark' : 'Caffeine',
   extraMetadata: {
     brunoBuild: {
       benchmark: isBenchmark,
@@ -43,14 +43,15 @@ const config = {
     ],
     icon: 'resources/icons/mac/icon.icns',
     hardenedRuntime: true,
-    identity: 'Anoop MD (W7LPPWA48L)',
+    identity: null,
     entitlements: 'resources/entitlements.mac.plist',
     entitlementsInherit: 'resources/entitlements.mac.plist',
     notarize: false,
     requirements: 'resources/app-requirements.txt',
+    // The `bruno` scheme is kept: OAuth2 system-browser callbacks are redirected to bruno://
     protocols: [
       {
-        name: 'Bruno',
+        name: 'Caffeine',
         schemes: [
           'bruno'
         ]
@@ -76,7 +77,7 @@ const config = {
     ],
     protocols: [
       {
-        name: 'Bruno',
+        name: 'Caffeine',
         schemes: ['bruno']
       }
     ],
@@ -121,7 +122,7 @@ const config = {
       }
     ],
     signtoolOptions: {
-      publisherName: 'Bruno Software Inc'
+      publisherName: 'Caffeine'
     }
   },
   nsis: {

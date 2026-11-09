@@ -1,18 +1,18 @@
-# Bruno CLI — Debian
+# Caffeine CLI — Debian
 
-Debian slim variant of the Bruno CLI Docker image.
+Debian slim variant of the Caffeine CLI Docker image.
 
 **Base image:** `node:24-slim`
 
 ## Building
 
 ```bash
-docker build -t usebruno/cli:debian ./images/debian
+docker build -t caffeine/cli:debian ./images/debian
 
-# with specific Bruno CLI version
+# with specific Caffeine CLI version
 docker build \
   --build-arg BRUNO_VERSION=3.3.0 \
-  -t usebruno/cli:3.3.0-debian \
+  -t caffeine/cli:3.3.0-debian \
   ./images/debian
 ```
 
@@ -20,8 +20,8 @@ docker build \
 
 ```bash
 # Run a collection
-docker run -v $(pwd):/bruno usebruno/cli:debian run 
+docker run -v $(pwd):/caffeine caffeine/cli:debian run
 
 # with pinned version
-docker run -v $(pwd):/bruno usebruno/cli:3.3.0-debian run 
+docker run -v $(pwd):/caffeine caffeine/cli:3.3.0-debian run
 ```

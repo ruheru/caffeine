@@ -1,0 +1,713 @@
+﻿
+> dev
+> node ./scripts/dev.js
+
+
+[1m[33m🚀 Starting Bruno development environment...[0m
+
+node.exe : (node:27868) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead 
+to security vulnerabilities, as the arguments are not escaped, only concatenated.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:27868) [D...y concatenated.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+> @usebruno/app@2.0.0 dev
+> rsbuild dev
+
+Rsbuild v1.7.6
+
+  ➜  Network:  http://10.8.32.102:3000/
+  ➜  Network:  http://172.20.160.1:3000/
+  ➜  Network:  http://192.168.1.60:3000/
+  ➜  Local:    http://localhost:3000/
+
+[32m✓[0m Detected dev server on port [1m3000[0m
+[36mℹ[0m Starting Electron with [36mBRUNO_DEV_PORT=3000[0m
+start   build started...
+
+> caffeine@2.0.0 dev
+> electron .
+
+
+(node:30208) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative 
+instead.
+(Use `electron --trace-deprecation ...` to show where the warning was created)
+(electron) 'session.getAllExtensions' is deprecated and will be removed. Please use 
+'session.extensions.getAllExtensions' instead.
+(electron) 'session.loadExtension' is deprecated and will be removed. Please use 'session.extensions.loadExtension' 
+instead.
+(node:30208) ExtensionLoadWarning: Warnings loading extension at 
+C:\Users\KhairulUmam\AppData\Roaming\caffeine\extensions\lmhkpmbekcpmknklioeibfkpmmfibljd:
+  Permission 'notifications' is unknown.
+  Permission 'contextMenus' is unknown.
+
+Added Extensions:  Redux DevTools, React Developer Tools
+Loading Extension: React Developer Tools
+Loading Extension: Redux DevTools
+Preferences file is located at: C:\Users\KhairulUmam\AppData\Roaming\caffeine\preferences.json
+(node:30208) ExtensionLoadWarning: Warnings loading extension at 
+C:\Users\KhairulUmam\AppData\Roaming\caffeine\extensions\lmhkpmbekcpmknklioeibfkpmmfibljd:
+  Permission 'notifications' is unknown.
+  Permission 'contextMenus' is unknown.
+
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+ready   built in 41.9 s
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+start   build started...
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+ready   built in 0.27 s
+watcher add: C:\Users\KhairulUmam\AppData\Roaming\caffeine\tmp\transient\30208\bruno-scratch-pd6TWt\metadata.json
+watcher add: C:\Users\KhairulUmam\AppData\Roaming\caffeine\tmp\transient\30208\bruno-scratch-pd6TWt\opencollection.yml
+start   building src
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ready   built in 0.29 s
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+start   building src
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+ready   built in 0.28 s
+start   building src
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+ready   built in 0.31 s
+start   building GlobalSearchModal\constants\index.js and 1 more
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+ready   built in 0.16 s
+start   building components\GlobalSearchModal\index.js
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+ready   built in 0.44 s
+start   building src
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+ready   built in 0.33 s
+start   building components\GlobalSearchModal\index.js
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+ready   built in 0.27 s
+start   building src
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+ready   built in 0.29 s
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+start   building components\GlobalSearchModal\StyledWrapper.js
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+ready   built in 0.20 s
+start   building src
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+ready   built in 0.29 s
+start   building components\GlobalSearchModal\index.js
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+ready   built in 0.25 s
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+start   building src
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ready   built in 0.31 s
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+start   building RequestPane\QueryUrl\StyledWrapper.js
+warn    Build warnings: 
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+
+ready   built in 0.30 s
+start   building QueryUrl\HttpMethodSelector\StyledWrapper.js
+warn    Build warnings: 
+ready   built in 0.18 s
+File: ../../node_modules/amdefine/amdefine.js:1:1
+  ⚠ Module parse warning:
+  ╰─▶   ⚠ "__filename" is used and has been mocked. Remove it from your code, or set `node.__filename` to disable this 
+warning.
+
+File: ../../node_modules/flow-parser/flow_parser.js:3807:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3807:22]
+ 3805 │   }
+ 3806 │   function cH(a, b) {
+ 3807 │     this.fs = require(yT);
+      ·                       ──
+ 3808 │     this.fd = a;
+ 3809 │     this.flags = b;
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:3853:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[3853:22]
+ 3851 │   function axS(a, b) {
+ 3852 │     if (b.name) try {
+ 3853 │       var d = require(yT),
+      ·                       ──
+ 3854 │         c = d.openSync(b.name, "rs");
+ 3855 │       return new cH(c, b);
+      ╰────
+
+File: ../../node_modules/flow-parser/flow_parser.js:4145:15-25
+  ⚠ Critical dependency: the request of a dependency is an expression
+      ╭─[4145:22]
+ 4143 │   a$.prototype.constructor = a$;
+ 4144 │   function aS(a) {
+ 4145 │     this.fs = require(yT);
+      ·                       ──
+ 4146 │     this.root = a;
+ 4147 │   }
+      ╰────
+

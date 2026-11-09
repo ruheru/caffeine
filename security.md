@@ -1,7 +1,7 @@
-## Security  
+## Security
 
-At Bruno, we take security seriously and are committed to providing a safe experience for all users.  
-We appreciate responsible disclosure and value contributions that help improve Bruno's security.  
+At Caffeine, we take security seriously and are committed to providing a safe experience for all users.
+We appreciate responsible disclosure and value contributions that help improve Caffeine's security.
 
 
 ## Reporting a Vulnerability  

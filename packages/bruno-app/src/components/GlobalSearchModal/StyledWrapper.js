@@ -272,6 +272,20 @@ const StyledWrapper = styled.div`
     border: 1px solid ${(props) => rgba(props.theme.textLink, 0.2)};
     flex-shrink: 0;
   }
+  .shortcut-badge {
+    font-size: 0.625rem;
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: ${(props) => props.theme.colors.text.muted};
+    background: ${(props) => rgba(props.theme.text, 0.06)};
+    border: 1px solid ${(props) => props.theme.border.border1};
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .result-item[data-type="command"] .result-icon {
+    color: ${(props) => props.theme.brand};
+  }
   .result-item[data-type="documentation"] {
     .result-icon {
       color: ${(props) => props.theme.colors.text.muted};

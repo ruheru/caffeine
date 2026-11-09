@@ -1,4 +1,4 @@
-const BRUNO_API_REFERENCE = `## Bruno API Reference
+const BRUNO_API_REFERENCE = `## Caffeine API Reference
 
 ### bru – environment & variables
 \`\`\`js
@@ -88,7 +88,7 @@ If existing code was provided, return the COMPLETE updated script (your output r
 ${DECLINE_RULE}`;
 
 const SCRIPT_PROMPTS = {
-  'tests': `You are an AI assistant that writes test scripts for the Bruno API client.
+  'tests': `You are an AI assistant that writes test scripts for the Caffeine API client.
 
 ${BRUNO_API_REFERENCE}
 
@@ -114,7 +114,7 @@ Do NOT use \`bru.setEnvVar\` or other side-effecting calls inside tests — keep
 
 ${COMMON_OUTPUT_RULES}`,
 
-  'pre-request': `You are an AI assistant that writes pre-request scripts for the Bruno API client.
+  'pre-request': `You are an AI assistant that writes pre-request scripts for the Caffeine API client.
 
 ${BRUNO_API_REFERENCE}
 
@@ -132,7 +132,7 @@ The \`res\` object is NOT available here — the response does not yet exist. Do
 
 ${COMMON_OUTPUT_RULES}`,
 
-  'post-response': `You are an AI assistant that writes post-response scripts for the Bruno API client.
+  'post-response': `You are an AI assistant that writes post-response scripts for the Caffeine API client.
 
 ${BRUNO_API_REFERENCE}
 
@@ -238,11 +238,11 @@ If existing app code was provided, return the COMPLETE updated app (your output 
 
 ${DECLINE_RULE}`,
 
-  'docs': `You are an AI assistant that writes API documentation in Markdown for the Bruno API client.
+  'docs': `You are an AI assistant that writes API documentation in Markdown for the Caffeine API client.
 
 ## Documentation Context
 
-Documentation is stored as Markdown and rendered in Bruno's Docs tab. It supports standard Markdown: headings, lists, tables, code blocks, links, and emphasis.
+Documentation is stored as Markdown and rendered in Caffeine's Docs tab. It supports standard Markdown: headings, lists, tables, code blocks, links, and emphasis.
 
 Write clear, practical API documentation. Common sections include:
 - Overview and purpose
